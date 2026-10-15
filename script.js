@@ -11,19 +11,19 @@
 // Display either "Children's discount applied!" or "Regular ticket price applies."
 // Bonus: Use prompt() to collect the customer's age and validate it before applying the ternary operator.
 
-const customerAge= Number(prompt("What is the customer's age?"))
+const customerAge= Number(prompt("What is the customer's age?"));
 
 if(customerAge < 0){
-    console.log("Invalid age entered")
+    console.log("Invalid age entered");
 }
 else if(Number.isNaN(customerAge)){
-    console.log("Please enter a figure for age")
+    console.log("Please enter a figure for age");
 }
 
 //applying an if statement here so the code only submits the customerAge variable if a number was entered
 if (!Number.isNaN(customerAge) && customerAge > 0 ){
     const ticketMessage= customerAge <= 12? "Children's discount applied!" : "Regular ticket price applies.";
-    console.log(ticketMessage)
+    console.log(ticketMessage);
 }
 
 
@@ -54,21 +54,21 @@ if (!Number.isNaN(customerAge) && customerAge > 0 ){
 // Bonus: Use .toLowerCase() to ensure that inputs such as "Rice" and "RICE" are accepted.
 
 
-const meal = prompt("Which meal do you want?").toLowerCase()
+const meal = prompt("Which meal do you want?").toLowerCase();
 
 // Use a switch statement to determine the selected meal's price.
  switch (meal){
     case "rice":
-        console.log(`Selected Meal: ${meal}, Price: ₦3500. Thank you for your order!`)
+        console.log(`Selected Meal: ${meal}, Price: ₦3500. Thank you for your order!`);
         break;
     case "beans":
-        console.log(`Selected Meal: ${meal}, Price: ₦2500. Thank you for your order!`)
+        console.log(`Selected Meal: ${meal}, Price: ₦2500. Thank you for your order!`);
         break;
     case "yam":
-        console.log(`Selected Meal: ${meal}, Price: ₦3000. Thank you for your order!`)
+        console.log(`Selected Meal: ${meal}, Price: ₦3000. Thank you for your order!`);
         break;
     case "spaghetti":
-        console.log(`Selected Meal: ${meal}, Price: ₦4000. Thank you for your order!`)
+        console.log(`Selected Meal: ${meal}, Price: ₦4000. Thank you for your order!`);
         break;
     default:
         console.log("Sorry, this meal is unavailable.");
@@ -91,30 +91,30 @@ const meal = prompt("Which meal do you want?").toLowerCase()
 // Otherwise, display "You do not qualify for a scholarship."
 // Validate both numeric inputs to ensure they are between 0 and 100, and reject empty or invalid entries.
 
-const studentName= prompt("What is your name?")
-const examScoreString= prompt("What is your exam score?")
-const examScore= Number(examScoreString)
-const attendancePercentString= prompt("What is your attendance percentage?")
-const attendancePercent= Number(attendancePercentString)
+const studentName= prompt("What is your name?");
+const examScoreString= prompt("What is your exam score?");
+const examScore= Number(examScoreString);
+const attendancePercentString= prompt("What is your attendance percentage?");
+const attendancePercent= Number(attendancePercentString);
 
 
 if(Number.isNaN(examScore) || examScoreString.trim() == ""){
-    console.log("Please enter a figure for your exam score")
+    console.log("Please enter a figure for your exam score");
 }
 else if(Number.isNaN(attendancePercent) || attendancePercentString.trim() == ""){
-    console.log("Please enter a figure for your attendance")
+    console.log("Please enter a figure for your attendance");
 }
 else if(examScore < 0 || examScore > 100){
-    console.log("Invalid exam score entered")
+    console.log("Invalid exam score entered");
 }
 else if(attendancePercent < 0 || attendancePercent > 100){
-    console.log("Invalid Attendance entered")
+    console.log("Invalid Attendance entered");
 }
 else if(examScore >= 80 && attendancePercent >= 90){
-    console.log("Congratulations! You qualify for a scholarship.")
+    console.log("Congratulations! You qualify for a scholarship.");
 }
 else{
-    console.log("You do not qualify for a scholarship.")
+    console.log("You do not qualify for a scholarship.");
 }
 
 
